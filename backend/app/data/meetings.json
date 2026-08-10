@@ -1,0 +1,212 @@
+[
+  {
+    "meeting_id": "architecture-001",
+    "meeting_name": "Architecture Meeting",
+    "date": "2026-08-05",
+    "timestamp": "00:02",
+    "speaker": "Sarah",
+    "text": "For this project we need to decide on our backend framework. I think FastAPI is the right choice because it gives us automatic API docs, async support, and great performance.",
+    "topic": "backend framework",
+    "memory_type": "discussion"
+  },
+  {
+    "meeting_id": "architecture-001",
+    "meeting_name": "Architecture Meeting",
+    "date": "2026-08-05",
+    "timestamp": "00:05",
+    "speaker": "Raj",
+    "text": "Agreed on FastAPI. It also plays nicely with Pydantic which we'll need for data validation.",
+    "topic": "backend framework",
+    "memory_type": "decision"
+  },
+  {
+    "meeting_id": "architecture-001",
+    "meeting_name": "Architecture Meeting",
+    "date": "2026-08-05",
+    "timestamp": "00:08",
+    "speaker": "Sarah",
+    "text": "We'll use FastAPI for the backend. That's decided.",
+    "topic": "backend framework",
+    "memory_type": "decision"
+  },
+  {
+    "meeting_id": "architecture-001",
+    "meeting_name": "Architecture Meeting",
+    "date": "2026-08-05",
+    "timestamp": "00:11",
+    "speaker": "Sarah",
+    "text": "Now we need someone to own the authentication layer. It needs to cover login, JWT token management, and user sessions.",
+    "topic": "authentication",
+    "memory_type": "discussion"
+  },
+  {
+    "meeting_id": "architecture-001",
+    "meeting_name": "Architecture Meeting",
+    "date": "2026-08-05",
+    "timestamp": "00:14",
+    "speaker": "Raj",
+    "text": "I'll take care of the authentication layer.",
+    "topic": "authentication",
+    "memory_type": "commitment"
+  },
+  {
+    "meeting_id": "architecture-001",
+    "meeting_name": "Architecture Meeting",
+    "date": "2026-08-05",
+    "timestamp": "00:16",
+    "speaker": "Sarah",
+    "text": "Great. Raj owns authentication. Let's keep the first version simple — no OAuth for now, just JWT-based auth.",
+    "topic": "authentication",
+    "memory_type": "decision"
+  },
+  {
+    "meeting_id": "architecture-001",
+    "meeting_name": "Architecture Meeting",
+    "date": "2026-08-05",
+    "timestamp": "00:20",
+    "speaker": "Sarah",
+    "text": "Let's keep the first version simple. We can iterate once the core is working.",
+    "topic": "project scope",
+    "memory_type": "decision"
+  },
+  {
+    "meeting_id": "architecture-001",
+    "meeting_name": "Architecture Meeting",
+    "date": "2026-08-05",
+    "timestamp": "00:23",
+    "speaker": "Raj",
+    "text": "Sounds good. I'll start on auth this week and have a draft ready for review by Wednesday.",
+    "topic": "authentication",
+    "memory_type": "action_item"
+  },
+  {
+    "meeting_id": "database-002",
+    "meeting_name": "Database Selection Meeting",
+    "date": "2026-08-06",
+    "timestamp": "00:03",
+    "speaker": "Sarah",
+    "text": "We need to pick a database for the new service. I've looked at MySQL and PostgreSQL and I think PostgreSQL is safer for us because of its better support for JSON fields, transactions, and its stricter data integrity constraints.",
+    "topic": "database selection",
+    "memory_type": "discussion"
+  },
+  {
+    "meeting_id": "database-002",
+    "meeting_name": "Database Selection Meeting",
+    "date": "2026-08-06",
+    "timestamp": "00:07",
+    "speaker": "Raj",
+    "text": "I agree, let's go with PostgreSQL. We've used it before and the team is already comfortable with it.",
+    "topic": "database selection",
+    "memory_type": "decision"
+  },
+  {
+    "meeting_id": "database-002",
+    "meeting_name": "Database Selection Meeting",
+    "date": "2026-08-06",
+    "timestamp": "00:10",
+    "speaker": "Sarah",
+    "text": "PostgreSQL it is. It's also easier to host on Render and has good managed options on AWS if we need to scale.",
+    "topic": "database selection",
+    "memory_type": "decision"
+  },
+  {
+    "meeting_id": "database-002",
+    "meeting_name": "Database Selection Meeting",
+    "date": "2026-08-06",
+    "timestamp": "00:14",
+    "speaker": "Raj",
+    "text": "I can set up the initial schema migrations with Alembic once authentication is done.",
+    "topic": "database setup",
+    "memory_type": "commitment"
+  },
+  {
+    "meeting_id": "database-002",
+    "meeting_name": "Database Selection Meeting",
+    "date": "2026-08-06",
+    "timestamp": "00:17",
+    "speaker": "Sarah",
+    "text": "We should also decide on our ORM. SQLAlchemy is the standard choice and it integrates well with FastAPI.",
+    "topic": "database tooling",
+    "memory_type": "discussion"
+  },
+  {
+    "meeting_id": "database-002",
+    "meeting_name": "Database Selection Meeting",
+    "date": "2026-08-06",
+    "timestamp": "00:20",
+    "speaker": "Raj",
+    "text": "Agreed, SQLAlchemy with async support is the right call here.",
+    "topic": "database tooling",
+    "memory_type": "decision"
+  },
+  {
+    "meeting_id": "deployment-003",
+    "meeting_name": "Deployment Planning Meeting",
+    "date": "2026-08-07",
+    "timestamp": "00:02",
+    "speaker": "Sarah",
+    "text": "We need to get the API deployed before our demo. The deadline is Friday.",
+    "topic": "deployment deadline",
+    "memory_type": "discussion"
+  },
+  {
+    "meeting_id": "deployment-003",
+    "meeting_name": "Deployment Planning Meeting",
+    "date": "2026-08-07",
+    "timestamp": "00:05",
+    "speaker": "Sarah",
+    "text": "We need the API deployed by Friday. No exceptions.",
+    "topic": "deployment deadline",
+    "memory_type": "decision"
+  },
+  {
+    "meeting_id": "deployment-003",
+    "meeting_name": "Deployment Planning Meeting",
+    "date": "2026-08-07",
+    "timestamp": "00:08",
+    "speaker": "Raj",
+    "text": "I'll handle the Render deployment. I've deployed on Render before and I know the environment variables and service config setup.",
+    "topic": "deployment",
+    "memory_type": "commitment"
+  },
+  {
+    "meeting_id": "deployment-003",
+    "meeting_name": "Deployment Planning Meeting",
+    "date": "2026-08-07",
+    "timestamp": "00:12",
+    "speaker": "Sarah",
+    "text": "Good. Raj is owning deployment to Render. Make sure the environment variables are all set correctly before go-live.",
+    "topic": "deployment",
+    "memory_type": "action_item"
+  },
+  {
+    "meeting_id": "deployment-003",
+    "meeting_name": "Deployment Planning Meeting",
+    "date": "2026-08-07",
+    "timestamp": "00:15",
+    "speaker": "Raj",
+    "text": "I'll also write the deployment runbook so anyone can reproduce it if needed.",
+    "topic": "deployment",
+    "memory_type": "commitment"
+  },
+  {
+    "meeting_id": "deployment-003",
+    "meeting_name": "Deployment Planning Meeting",
+    "date": "2026-08-07",
+    "timestamp": "00:18",
+    "speaker": "Sarah",
+    "text": "One thing to watch out for — make sure the PostgreSQL connection string is using the external URL on Render, not the internal one.",
+    "topic": "deployment",
+    "memory_type": "discussion"
+  },
+  {
+    "meeting_id": "deployment-003",
+    "meeting_name": "Deployment Planning Meeting",
+    "date": "2026-08-07",
+    "timestamp": "00:21",
+    "speaker": "Raj",
+    "text": "Got it. I'll double-check the database connection config before deploying.",
+    "topic": "deployment",
+    "memory_type": "action_item"
+  }
+]
